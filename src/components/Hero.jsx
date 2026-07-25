@@ -39,13 +39,12 @@ export default function Hero() {
 
       <div className="relative z-10 flex w-full max-w-5xl">
         <div className="w-full md:w-1/2 flex flex-col justify-left max-w-3xl gap-5 text-white">
-          <h2 className="text-4xl font-black">
+          <h2 className="text-6xl font-black ">
             Odkryj miejsca, które zapamiętasz na długo
           </h2>
           <p>
-            Projektuję interfejsy i zamieniam je w działające aplikacje webowe.
-            Łączę UX, frontend i podstawy pracy z backendem, aby budować
-            kompletne rozwiązania.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
       </div>

@@ -1,51 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
 
-:root {
-  --text: #62574e;
-  --text-h: #261f1a;
-  --bg: #ffedd4;
-  --border: #d8d0c3;
-  --code-bg: #d8d0c3;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
+@theme {
+  --color-background: #f7f3eb;
+  --color-foreground: #f1eade;
+  --color-card: #fbf8f1;
+  --color-foreground-strong: #261f1a;
+  --color-border: #c9baad;
+  --color-code-bg: #d8d0c3;
+  --color-primary: #261f1a;
+  --color-primary-light: #9e8c7e;
+  --color-primary-soft: rgba(38, 31, 26, 0.1);
+  --color-primary-border: rgba(38, 31, 26, 0.35);
+  --color-surface: rgba(244, 243, 236, 0.5);
+  --shadow-card:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, "Work Sans", Roboto, sans-serif;
-  --heading: system-ui, "Cormorant Infant", serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --font-sans: "Work Sans", system-ui, Roboto, sans-serif;
+  --font-heading: "Cormorant Infant", serif;
+}
 
-  font: 18px/145% var(--sans);
+:root {
+  color-scheme: light;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.45;
   letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
+  color: var(--color-primary);
+  background-color: var(--color-background);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+  :root {
     font-size: 16px;
   }
 }
 
-body {
-  font-family: "Work Sans", sans-serif; /* fallback font */
-  font-weight: 500;
-  line-height: 1.5;
-  margin: 0;
-}
+@layer base {
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Cormorant Infant", serif;
-  font-weight: 700;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
 }

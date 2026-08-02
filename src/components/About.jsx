@@ -8,7 +8,7 @@ export default function About() {
       className="min-h-screen flex items-center justify-center px-6 pt-10 bg-background"
     >
       <div className="flex w-full flex-col max-w-5xl">
-        <div className="w-full flex flex flex-col md:flex-row gap-7">
+        <div className="w-full flex flex-col md:flex-row gap-7">
           <div className="flex-1">
             <img src={hero} className="rounded-xs"></img>
           </div>

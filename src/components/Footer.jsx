@@ -40,7 +40,7 @@ export default function Footer() {
             >
               x
             </button>
-            <h3 className="font-alkalami text-2xl pt-2">Dziękuję</h3>
+            <h3 className="font-alkalami text-2xl pt-2">Dziękuję,</h3>
             <p className="text-base py-2 pr-3">
               Otrzymałam twoją wiadomość, odezwę się wkrótce!
             </p>
@@ -49,12 +49,11 @@ export default function Footer() {
         <div className="flex w-full max-w-5xl">
           <div className="w-full flex flex-col md:flex-row gap-7">
             <div className="w-full flex flex-col justify-left">
-              <h2>Footer</h2>
-              <h3>Zaplanujmy wycieczkę!</h3>
+              <h2>Zaplanujmy wycieczkę!</h2>
+
               <p>
-                Tell me a little about when you're visiting and what draws you —
-                the city, the mountains, or both. I reply personally, usually
-                within a day.
+                Masz jakieś pytania? Zapraszam do kontaktu mailowo lub
+                telefonicznie.
               </p>
             </div>
 
